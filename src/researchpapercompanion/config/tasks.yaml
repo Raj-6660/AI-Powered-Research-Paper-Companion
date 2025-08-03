@@ -1,0 +1,18 @@
+research_task:
+  description: >
+    Explore and compile the most important advancements, publications, tools, or news in {topic} 
+    as of {current_year}. Your research should reflect both breadth and depth.
+  expected_output: >
+    A markdown-formatted list of 10 well-chosen bullet points summarizing the most relevant 
+    insights, discoveries, or trends in {topic}. Each point should be concise, insightful, and informative.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Take the bullet points from the research and expand them into a detailed report. Each bullet 
+    point should become a section with a heading, in-depth explanation, context, and relevant details.
+    Organize the report logically and ensure clarity and readability throughout.
+  expected_output: >
+    A markdown-formatted report with a title, sections for each main topic, and properly structured 
+    information under each heading. Avoid using '```', but ensure it's clean and markdown-compatible.
+  agent: reporting_analyst

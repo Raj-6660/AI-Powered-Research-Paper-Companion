@@ -1,0 +1,23 @@
+[project]
+name = "researchpapercompanion"
+version = "0.1.0"
+description = "ResearchPaperCompanion using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.150.0,<1.0.0"
+]
+
+[project.scripts]
+researchpapercompanion = "researchpapercompanion.main:run"
+run_crew = "researchpapercompanion.main:run"
+train = "researchpapercompanion.main:train"
+replay = "researchpapercompanion.main:replay"
+test = "researchpapercompanion.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
